@@ -1,0 +1,50 @@
+:root{
+    --bg-color: #f0ece5;
+    --main-color: #155445;
+    --main-margin: 10px;
+    --main-padding: 30px;
+}
+
+body{
+    background-color: var(--main-color);
+    margin: var(--main-margin);
+    padding: var(--main-padding);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header{
+    background-color: var(--bg-color);
+    width: 98%;
+    border-radius: 10px 10px 0 0;
+    /* position: fixed; */
+    /* margin: var(--main-margin); */
+    padding: var(--main-padding);
+}
+
+header h2{
+    font-family: "montserrat", sans-serif;
+}
+
+main{
+    background-color: var(--bg-color);
+    width: 98%;
+    /* margin: var(--main-margin); */
+    padding: var(--main-padding);
+}
+
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer{
+    background-color: var(--bg-color);
+    width: 98%;
+    border-radius: 0 0 10px 10px;
+    /* margin: var(--main-margin); */
+    padding: var(--main-padding);
+}
