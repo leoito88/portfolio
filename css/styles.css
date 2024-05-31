@@ -31,7 +31,8 @@ header{
     background-color: var(--bg-color);
     width: 98%;
     border-radius: 10px 10px 0 0;
-    /* position: fixed; */
+    /* position: fixed;
+    top: 20px; */
     /* margin: var(--main-margin); */
     padding: 0 var(--main-padding);
 }
@@ -58,6 +59,7 @@ main{
     align-items: center;
     justify-content: center;
     margin: 0;
+    padding: 0;
 }
 
 .hero h3{
@@ -89,6 +91,12 @@ main{
 
 .hero p {
     font-size: 0.8em;
+}
+
+.hero i{
+    font-size: 2.2em;
+    letter-spacing: 0.5em;
+    color: #000;
 }
 
 .hero-1{
@@ -138,10 +146,6 @@ main{
     align-items: center;
 }
 
-.i{
-    margin: 100px 100px 100px 100px;
-}
-
 .gradient-button {
     margin-top: 30px;
     padding: 10px 20px;
@@ -150,7 +154,22 @@ main{
     background-image: linear-gradient(150deg, var(--main-color), var(--hl-color));
     border: none;
     border-radius: 20px;
-    box-shadow: 0 0 0 1px white, 0 0 0 3px black, 5px 5px 0px #b1b1b1;
+    box-shadow: 0 0 0 1px white, 0 0 0 3px black, 5px 5px 2px #b1b1b1;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+}
+
+.gradient-button:hover {
+    margin-top: 30px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    scale: 1.01;
+    background-image: linear-gradient(150deg, var(--main-color), var(--hl-color));
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 0 0 1px white, 0 0 0 3px black, 8px 8px 4px #b1b1b1b5;
     cursor: pointer;
     outline: none;
     position: relative;
@@ -248,6 +267,28 @@ main{
     text-align: center;
 }
 
+.services h3, .skills h3, .portfolio h3, .testimonials h3, .pricing h3, .contact-me h3{
+    margin-top: 100px;
+    font-size: 1.5em;
+}
+
+.services span, .skills span, .portfolio span, .testimonials span, .pricing span, .contact-me span{
+    margin-left: 5px;
+    padding: 0;
+    font-size: 0.7em;
+    color: var(--hl-color);
+    font-family: "montserrat";
+    font-weight: 600;
+}
+
+.services h2, .skills h4, .portfolio h4, .testimonials h4, .pricing h4, .contact-me h4{
+    margin: -15px 0 35px 0;
+    padding: 0;
+    font-size: 1.3em;
+    font-weight: 900;
+    font-family: "caveat";
+}
+
 .cards{
     display: flex;
     align-items: center;
@@ -266,15 +307,22 @@ main{
     justify-content: space-around;
 }
 
+.cards h5{
+    margin-top: 0px;
+    font-size: 0.8em;
+    font-weight: 600;
+}
+
 .card1, .card2, .card3{
     padding: 0 20px;
     text-align: left;
-    background-color: #fff;
+    background-color: #f8f5f2;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     transition: 0.3s;
+    box-shadow: 0 0px 6px rgba(0, 0, 0, 0.1);
     
 }
 
@@ -286,6 +334,16 @@ main{
     background-image: linear-gradient(150deg, var(--main-color), var(--hl-color));
     color: #fff;
     border: 1px solid black;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2)
+}
+
+.cards i{
+    color: var(--hl-color);
+    padding-left: 20px;
+}
+
+.card1:hover i, .card2:hover i, .card3:hover i{
+    color: var(--bg-color);
 }
 
 /* Seccion Skills */
@@ -308,6 +366,32 @@ main{
     border-radius: 10px;
 }
 
+/* Sección Portfolio */
+
+.portfolio{
+    text-align: center;
+}
+
+/* Sección Testimonials */
+
+.testimonials{
+    text-align: center;
+}
+
+/* Sección Pricing */
+
+.pricing{
+    text-align: center;
+}
+
+/* Sección Contact Me - Inicio de Footer */
+
+.contact-me{
+    text-align: center;
+}
+
+/* Sección Footer */
+
 footer{
     background-color: var(--bg-color);
     width: 98%;
@@ -315,3 +399,42 @@ footer{
     /* margin: var(--main-margin); */
     padding: var(--main-padding);
 }
+
+.foot{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: -25px;
+}
+
+.foot i{
+    font-size: 1.5em;
+    letter-spacing: 1em;
+    color: #000;
+}
+
+.foot h4{
+    padding: 0;
+    font-size: 0.9em;
+    color: #000;
+    font-family: "montserrat";
+    font-weight: 500;
+}
+
+.foot span{
+    font-size: 1em;
+    color: var(--hl-color);
+    font-family: "montserrat";
+    font-weight: 700;
+}
+
+.foot1, .foot2, .foot3{
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: 1;
+    text-align: center;
+}
+
+/* Fin de Footer */
