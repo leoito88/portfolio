@@ -24,8 +24,6 @@ El código debe subirse a GitHub, acompañado de un archivo README que describa 
 
 Fecha de Entrega: El trabajo debe ser entregado antes del 7 DE JUNIO  A LAS 9AM.
 
-Envío del Trabajo: Enviar el enlace al repositorio de GitHub al correo: jose.l.condori@gmaill.com.
-
 ## Notas Importantes:
 
 Asegúrese de que el diseño sea único y no repetido entre los compañeros, y cumpla con todos los requisitos técnicos especificados. La presentación y funcionalidad de la página serán criterios clave para la evaluación. La nota mínima para aprobar es 6. Se destacará el uso adecuado de Git y la calidad del perfil de GitHub de cada alumno.
