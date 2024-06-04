@@ -1,3 +1,5 @@
+
+
 /* Variables */
 
 :root{
@@ -13,6 +15,10 @@
 @font-face {
     font-family: 'Montserratout';
     src: url('fonts/Montserrat-ExtraBold.ttf') format('truetype');
+
+}
+*{
+    scroll-behavior: smooth;
 }
 
 body{
@@ -27,14 +33,40 @@ body{
 }
 
 /* Seccion Header */
+
 header{
-    background-color: var(--bg-color);
+    /* background-color: var(--bg-color); */
     width: 98%;
-    border-radius: 10px 10px 0 0;
-    /* position: fixed;
-    top: 20px; */
+    height: 70px;
+    border-radius: 10px 10px 10px 10px;
+    position: sticky;
+    top: 20px;
     /* margin: var(--main-margin); */
     padding: 0 var(--main-padding);
+    z-index: 100;
+    background: rgba(240, 236, 229, 0.30);
+    box-shadow: 0 5px 32px rgb(0, 0, 0,0.05);
+    backdrop-filter: blur(4px);
+    opacity: 1; /* Opacidad */
+}
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.links a{
+    text-decoration: none;
+    padding: 10px;
+    color: var(--main-color);
+    font-weight: 800;
+    transition: color 0.3s ease;
+}
+
+.links a:hover{
+    color: var(--hl-color);
 }
 
 header h2{
@@ -46,6 +78,9 @@ header span{
 }
 
 main{
+    position: relative;
+    border-radius: 10px 10px 0 0;
+    top:-70px;
     background-color: var(--bg-color);
     width: 98%;
     /* margin: var(--main-margin); */
@@ -58,7 +93,7 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0;
+    margin: 70px 0 0 0;
     padding: 0;
 }
 
@@ -79,9 +114,10 @@ main{
     margin-top: 0px;
     font-family: "montserratout", sans-serif;
     -webkit-text-stroke: 2px #000;
-    font-size: 3em;
+    font-size: 3.5em;
+    font-weight: 700;
     color: #fff;
-    text-shadow: 2px 2px 1px #b1b1b1, 0 0 0px black, 0 0 0px black ;
+    text-shadow: 3px 3px 1px #b1b1b1, 0 0 0px black, 0 0 0px black ;
 }
 
 .hero h1 {
@@ -97,6 +133,12 @@ main{
     font-size: 2.2em;
     letter-spacing: 0.5em;
     color: #000;
+    transition: color 0.3s ease;
+    margin-top: 10px;
+}
+
+.hero i:hover{
+    color: var(--hl-color);
 }
 
 .hero-1{
@@ -158,6 +200,7 @@ main{
     cursor: pointer;
     outline: none;
     position: relative;
+    transition: color 1s ease;
 }
 
 .gradient-button:hover {
@@ -173,6 +216,7 @@ main{
     cursor: pointer;
     outline: none;
     position: relative;
+    transition: color 0.3s ease;
 }
 
 .skil{
@@ -268,7 +312,7 @@ main{
 }
 
 .services h3, .skills h3, .portfolio h3, .testimonials h3, .pricing h3, .contact-me h3{
-    margin-top: 100px;
+    margin-top: 200px;
     font-size: 1.5em;
 }
 
@@ -305,6 +349,7 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    line-height: 2em;
 }
 
 .cards h5{
@@ -313,7 +358,7 @@ main{
     font-weight: 600;
 }
 
-.card1, .card2, .card3{
+.card{
     padding: 0 20px;
     text-align: left;
     background-color: #f8f5f2;
@@ -321,12 +366,14 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    width: 20%;
+    border: 1px solid white;
     transition: 0.3s;
     box-shadow: 0 0px 6px rgba(0, 0, 0, 0.1);
     
 }
 
-.card1:hover, .card2:hover, .card3:hover{
+.card:hover{
     padding: 0 20px;
     scale: 1.03;
     text-align: left;
@@ -340,10 +387,69 @@ main{
 .cards i{
     color: var(--hl-color);
     padding-left: 20px;
+    transition: 0.3s;
 }
 
-.card1:hover i, .card2:hover i, .card3:hover i{
+.card:hover i{
     color: var(--bg-color);
+}
+
+.card:hover .dott{
+    background-color: var(--main-color);
+}
+
+.footcard{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dots{
+    display: grid;
+    grid-template-columns: repeat(5, 2px); 
+    grid-template-rows: repeat(4, 2px);
+    gap: 12px; 
+    margin: 0 -10px 10px 0;
+}
+
+.dott{
+    width: 5px;
+    aspect-ratio: 1/1;
+    background-color: var(--hl-color);
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.slider{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+.dot{
+    width: 10px;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    background-color: var(--bg-color);
+    border: solid 3px;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+}
+
+.dot:nth-child(1){
+    background-color: var(--hl-color);
+    position: relative;
+    width: 15px;
+}
+
+.line{
+    margin: 0;
+    padding: 0;
+    width: 20px;
+    border: solid 2px #000;
 }
 
 /* Seccion Skills */
@@ -352,17 +458,69 @@ main{
     text-align: center;
 }
 
+.skills .title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .skill-cards{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 30px;
+    flex-wrap: wrap;
 }
 
-.skill-card1, .skill-card2, .skill-card3, .skill-card4, .skill-card5, .skill-card6{
+.skill-card h3{
+    margin: 0;
+    font-size: 1.1em;
+    font-weight: 700;
+}
+
+.skill-card h2{
+    font-size: 0.8em;
+    font-weight: 500;
+}
+
+.skill-card span{
+    font-size: 0.9em;
+    margin: 0;
+}
+
+.skill-card h5{
+    font-size: 0.7em;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.skill-card{
+    flex-basis: 25%;
     padding: 5px;
     text-align: left;
-    background-color: #fff;
+    /* background-color: #fff; */
+    border-radius: 10px;
+    padding: 15px;
+    /* width: 25%; */
+}
+
+.skill-bar {
+    margin-top: 25px;
+    position: relative;
+    width: 100%;
+    height: 3px;
+    background-color: #d7d7d7;
+    border-radius: 10px;
+}
+
+.skill-bar::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: var(--porcentaje);
+    background-color: var(--hl-color);
     border-radius: 10px;
 }
 
@@ -393,11 +551,14 @@ main{
 /* Sección Footer */
 
 footer{
+    position: relative;
+    top:-70px;
     background-color: var(--bg-color);
     width: 98%;
     border-radius: 0 0 10px 10px;
     /* margin: var(--main-margin); */
     padding: var(--main-padding);
+    margin-bottom: -70px;
 }
 
 .foot{
