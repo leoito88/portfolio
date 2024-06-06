@@ -1,4 +1,4 @@
-
+/* Inicio Código */
 
 /* Variables */
 
@@ -6,8 +6,6 @@
     --bg-color: #f0ece5;
     --main-color: #155445;
     --hl-color: #28a587;
-    --main-margin: 10px;
-    --main-padding: 30px;
 }
 
 /* Fuentes Locales */
@@ -17,14 +15,15 @@
     src: url('fonts/Montserrat-ExtraBold.ttf') format('truetype');
 
 }
+
 *{
     scroll-behavior: smooth;
 }
 
 body{
     background-color: var(--main-color);
-    margin: var(--main-margin);
-    padding: var(--main-padding);
+    margin: 0;
+    padding: 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -35,14 +34,13 @@ body{
 /* Seccion Header */
 
 header{
-    /* background-color: var(--bg-color); */
-    width: 98%;
+    width: 75%;
     height: 70px;
     border-radius: 10px 10px 10px 10px;
     position: sticky;
-    top: 20px;
+    top: 50px;
     /* margin: var(--main-margin); */
-    padding: 0 var(--main-padding);
+    padding: 0 60px;
     z-index: 100;
     background: rgba(240, 236, 229, 0.30);
     box-shadow: 0 5px 32px rgb(0, 0, 0,0.05);
@@ -87,9 +85,9 @@ main{
     border-radius: 10px 10px 0 0;
     top:-70px;
     background-color: var(--bg-color);
-    width: 98%;
-    /* margin: var(--main-margin); */
-    padding: var(--main-padding);
+    width: 75%;
+    margin: 50px;
+    padding: 60px;
 }
 
 /* Sección Hero */
@@ -132,6 +130,7 @@ main{
 
 .hero p {
     font-size: 0.8em;
+    font-weight: 500;
 }
 
 .hero i{
@@ -151,7 +150,18 @@ main{
 
 .hero-1{
     width: 50%;
-    /* background-color: #f5eeee; */
+    /* background-color: #fff; */
+    padding: 0 200px 0 0;
+}
+
+.hero-1 img{
+    margin-top: px;
+    width: 230px;
+}
+
+.hero-1 h1{
+    margin-bottom: -5px;
+    width: 230px;
 }
 
 @keyframes slideUp {
@@ -165,12 +175,24 @@ main{
    }
 }
   
+
+.hero-2 {
+    /* background-color: #fff; */
+    width: 50%;
+    /* height: 100%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .bg{
-    /* animation: slideUp 1s ease forwards; */
     background-image: linear-gradient(150deg, var(--main-color), var(--hl-color));
-    width: 395px;
+    width: 400px;
     height: 400px;
     border-radius: 50%;
+    overflow: hidden;
+    border: none;
 }
 
 .ph{
@@ -179,21 +201,10 @@ main{
     background-position: center;
     width: 100%;
     height: 100%;
-    /* width: 395px;
-    height: 400px; */
     border-radius: 50%;
     display: block;
     margin-left: auto;
     margin-right: auto;
-}
-
-.hero-2 {
-    /* background-color: #fff; */
-    width: 50%;
-    /* height: 100%; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .gradient-button {
@@ -224,7 +235,6 @@ main{
     cursor: pointer;
     outline: none;
     position: relative;
-    transition: color 0.3s ease;
 }
 
 .skil{
@@ -234,16 +244,13 @@ main{
 }
 
 .pop{
-    margin-top: 20px;
-    padding: 0px 10px 0;
+    padding: 5px 20px;
     font-size: 16px;
     color: black;
     background-color: #fff;
     border: none;
-    border-radius: 20px;
+    border-radius: 25px;
     box-shadow: 0 0 0 3px black, 6px 6px 0px #b1b1b1a1;
-    outline: none;
-    width: 25%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -302,15 +309,19 @@ main{
 }
 
 .pop1{
+    margin-top: -100px;
+    height: 100%;
+    width: 100px;
     position: relative;
-    top: -35%;
-    right: 0%;
+    right: 130px;
 }
 
 .pop2{
+    margin-top: -20px;
+    height: 100%;
+    width: 100px;
     position: relative;
-    top: -40%;
-    right: -65%;
+    right: -130px;
 }
 
 /* Sección Servicios */
@@ -377,7 +388,7 @@ main{
     justify-content: space-around;
     width: 20%;
     border: 1px solid white;
-    transition: 0.3s;
+    transition: all 0.3s ease;
     box-shadow: 0 0px 6px rgba(0, 0, 0, 0.1);
     
 }
@@ -418,7 +429,10 @@ main{
     grid-template-columns: repeat(5, 2px); 
     grid-template-rows: repeat(4, 2px);
     gap: 12px; 
-    margin: 0 -10px 10px 0;
+    /* margin: 0 -10px 10px 0; */
+    position: relative;
+    bottom: 10px;
+    right: -10px;
 }
 
 .dott{
@@ -557,13 +571,120 @@ main{
 
 .pricing .card{
     margin: 10px;
-    padding: 10px;
+    padding: 20px 20px 20px 20px;
+    width: 25%;
+    position: relative;
+}
+
+.pricing .card h3{
+    margin: 0;
+}
+
+.pricing .card h3 span{
+    margin: 0;
+    font-size: 0.9em;
 }
 
 .pricing .card h4{
     margin: 0;
     font-family: "montserrat";
     font-weight: 700;
+}
+
+.pricing .card h5{
+    padding: 0 30px;
+    margin: 0 0 0px;
+}
+
+.pricing .card .details h5{
+    padding: 0;
+    margin: 10px 0;
+    font-size: 0.9em;
+}
+
+.pricing .card .details i{
+    padding: 0 10px 0 0;
+    font-size: 0.9em;
+}
+
+.pricing .card h5 span{
+    color: #b1b1b1;
+    font-size: 1em;
+    margin: 0 26px;
+    text-decoration: line-through;
+    text-decoration-thickness: 3px;
+}
+
+.pricing .card h6{
+    font-size: 0.8em;
+}
+
+.card .popular{
+    position: absolute;
+    background-color: #28a587;
+    width: 110px;
+    height: 35px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: auto auto;
+    border: solid 2px #000;
+    border-radius: 50px;
+    color: #fff;
+    top: -22px;
+    right: 20px;
+    transition: all 0.5s ease;
+}
+
+.card:hover .popular{
+    background-color: #fff;
+    font-weight: 500;
+    color: #28a587;
+}
+
+.pricesdiv{
+    display: flex;
+    align-items: end;
+    justify-content: left;
+    margin-top: 30px;
+}
+
+.pricing .card .footcard{
+    display: flex;
+    flex-direction: column;
+}
+
+.pricing .card .footcard .gradient-button{
+    width: 100%;
+    margin-top: 0px;
+    font-weight: 600
+}
+
+.pricing .card:hover .footcard .gradient-button{
+    width: 100%;
+    margin-top: 0px;
+    background-image: linear-gradient(150deg, #fff, #fff);
+    color: #28a587;
+}
+
+.pricing .card:hover .footcard i{
+    color: #28a587;
+}
+
+.pricing .card .footcard .gradient-button:hover{
+    width: 100%;
+    margin-top: 0px;
+    background-image: linear-gradient(150deg, #c0d4c2, #f0f0f1);
+}
+
+.pricing .card .dots{
+    text-align: right;
+    justify-content: right;
+    position: relative;
+    bottom: -3em;
+    right: -5px;
+    align-items: end;
 }
 
 /* Sección Contact Me - Inicio de Footer */
@@ -577,25 +698,26 @@ main{
 
 footer{
     position: relative;
-    top:-70px;
+    top:-120px;
     background-color: var(--bg-color);
-    width: 98%;
+    width: 75%;
     border-radius: 0 0 10px 10px;
     /* margin: var(--main-margin); */
-    padding: var(--main-padding);
+    padding: 30px 60px;
     margin-bottom: -70px;
 }
 
 .foot{
+    padding: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: -25px;
+    margin-bottom: 0px;
+    /* background-color: #d2d2d2; */
 }
 
 .foot i{
-    font-size: 1.5em;
-    letter-spacing: 1em;
+    font-size: 2em;
     color: #000;
 }
 
@@ -615,12 +737,31 @@ footer{
 }
 
 .foot1, .foot2, .foot3{
-    margin: 10px;
+    margin: 0px;
+    padding: 0;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: 1;
     text-align: center;
+    margin: 0;
+}
+
+.foot1{
+    /* background-color: #28a587; */
+    gap: 28px;
+}
+
+.foot2{
+    /* background-color: #b1b1b1; */
+    height: 30px;
+}
+
+.foot3{
+    /* background-color: #155445; */
+    width: 150px;
+    height: 30px;
+    margin: 0;
 }
 
 /* Fin de Footer */
