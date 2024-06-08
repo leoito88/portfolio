@@ -34,7 +34,7 @@ body{
 /* Seccion Header */
 
 header{
-    width: 75%;
+    width: 74.5%;
     height: 70px;
     border-radius: 10px 10px 10px 10px;
     position: sticky;
@@ -139,6 +139,7 @@ main{
     color: #000;
     transition: color 1s ease;
     margin-top: 10px;
+    margin-bottom: 15px;
 }
 
 .hero i:hover{
@@ -162,6 +163,15 @@ main{
 .hero-1 h1{
     margin-bottom: -5px;
     width: 230px;
+}
+
+.contbut{
+    display: flex;
+    align-items: center;
+}
+
+.contbut span{
+    margin: 2px 0 0 5px;
 }
 
 @keyframes slideUp {
@@ -208,14 +218,14 @@ main{
 }
 
 .gradient-button {
-    margin-top: 30px;
+    /* margin-top: 30px; */
     padding: 10px 20px;
     font-size: 16px;
     color: white;
     background-image: linear-gradient(150deg, var(--main-color), var(--hl-color));
     border: none;
     border-radius: 20px;
-    box-shadow: 0 0 0 1px white, 0 0 0 3px black, 5px 5px 2px #b1b1b1;
+    box-shadow: 0 0 0 1px white, 0 0 0 3px black, 5px 5px 1px #b1b1b1;
     cursor: pointer;
     outline: none;
     position: relative;
@@ -223,7 +233,6 @@ main{
 }
 
 .gradient-button:hover {
-    margin-top: 30px;
     padding: 10px 20px;
     font-size: 16px;
     color: white;
@@ -231,7 +240,7 @@ main{
     background-image: linear-gradient(150deg, var(--main-color), var(--hl-color));
     border: none;
     border-radius: 20px;
-    box-shadow: 0 0 0 1px white, 0 0 0 3px black, 8px 8px 4px #b1b1b1b5;
+    box-shadow: 0 0 0 1px white, 0 0 0 3px black, 8px 8px 2px #b1b1b1b5;
     cursor: pointer;
     outline: none;
     position: relative;
@@ -390,7 +399,8 @@ main{
     border: 1px solid white;
     transition: all 0.3s ease;
     box-shadow: 0 0px 6px rgba(0, 0, 0, 0.1);
-    
+    height: 100%;
+    margin: 0;
 }
 
 .card:hover{
@@ -714,6 +724,141 @@ footer{
     justify-content: space-between;
     margin-bottom: 0px;
     /* background-color: #d2d2d2; */
+}
+
+.contactdivs{
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    margin-bottom: 100px;
+}
+
+.contleft{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    width: 40%;
+    padding-left: 60px;
+}
+
+.contleft h4{
+    padding-left: 0px;
+    text-align: left;
+}
+
+.contleft i{
+    background-color: #fff;
+    padding: 13px;
+    border-radius: 50%;
+    border: 2px solid;
+    aspect-ratio: 1/1;
+    width: 20px;
+    text-align: center;
+    font-size: 1em;
+    box-shadow: 4px 4px 0px #b1b1b1a1;
+}
+
+.datos{
+    margin: 15px 0 0 10px;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.barra{
+    background-color: #000;
+    width: 50px;
+    height: 2px;
+}
+
+.container h3{
+    margin: 0;
+    font-size: 0.8em;
+    font-weight: 600;
+    text-align: left;
+    color: #7a7a7a;
+}
+
+.container h4{
+    margin: 0;
+}
+
+.contright{
+    width: 60%;
+    display: flex;
+    align-items: start;
+    justify-content: left;
+    gap: 10px;
+}
+
+input{
+    border: 2px solid;
+    border-radius: 25px;
+    padding: 10px;
+}
+
+.top-campo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.campo{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+form{
+    text-align: left;
+}
+
+.name{
+    width: 100%;
+    padding-left: 40px;
+}
+
+.mail{
+    width: 100%;
+    padding-left: 40px;
+}
+
+.subject{
+    width: 100%;
+    padding-left: 40px;
+    margin-bottom: 15px;
+}
+
+.msg{
+    width: 100%;
+    height: 140px;
+    align-items: start;
+    resize: none;
+    border: 2px solid;
+    border-radius: 15px;
+    padding: 10px;
+    padding-left: 40px;
+    margin-bottom: 15px;
+}
+
+.form-icon{
+    position: absolute;
+    left: 5px;
+    top: 0;
+    width: 40px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    margin-top: 12px;
 }
 
 .foot i{

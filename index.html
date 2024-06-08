@@ -6,6 +6,7 @@
     <title>LR.Dev - Front End Developer Portfolio</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -42,8 +43,11 @@
                 <a href="https://www.github.com/leoito88"><i class="fa-brands fa-github"></i></a>
                 <a href="https://wa.me/+5493813150489"><i class="fa-brands fa-whatsapp"></i></a>
                 <a href="http://www.instagram.com/leoito88"><i class="fa-brands fa-instagram"></i></a><br><br>
-                <button class="gradient-button">Descargar CV</button> <span class="skil">--------- Habilidades</span>
+                <div class="contbut">
+                    <button class="gradient-button">Descargar CV</button><div class="barra"></div> <span class="skil">Habilidades</span>
+                </div>
             </div>
+
             <div class="hero-2">
                 <div class="bg">
                  <div class="ph">
@@ -76,7 +80,8 @@
             <div class="cards">
                 <div class="card">
                     <h4>Diseñador Web</h4>
-                    <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati delectus blanditiis maiores amet, vero rem doloribus facere aut, ut illo repellendus tempore dicta nulla, voluptate voluptatem dolore doloremque minima! Enim?</h6>
+                    <h6>Diseño, desarrollo y mantenimiento de sitios web. Trabajo con HTML, CSS y JavaScript para crear experiencias interactivas. <br><br>
+                        Mis Funciones: Creo páginas, soluciono errores y optimizo el rendimiento.</h6>
                     <div class="footcard">
                         <h5>Ver Precios<i class="fa-solid fa-arrow-right"></i></h5>
                     <div class="dots">
@@ -106,7 +111,8 @@
 
                 <div class="card">
                     <h4>Diseñador UI/UX</h4>
-                    <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati delectus blanditiis maiores amet, vero rem doloribus facere aut, ut illo repellendus tempore dicta nulla, voluptate voluptatem dolore doloremque minima! Enim?</h6>
+                    <h6>Diseño de interfaces atractivas y funcionales para el usuario de aplicaciones y sitios web. <br><br>
+                        Mis Funciones: Creo wireframes, prototipos y colaboro con otros desarrolladores para la creación de futuras páginas.</h6>
                     <div class="footcard">
                         <h5>Ver Precios<i class="fa-solid fa-arrow-right"></i></h5>
                     <div class="dots">
@@ -136,7 +142,8 @@
 
                 <div class="card">
                     <h4>Desarrollador de Apps</h4>
-                    <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati delectus blanditiis maiores amet, vero rem doloribus facere aut, ut illo repellendus tempore dicta nulla, voluptate voluptatem dolore doloremque minima! Enim?</h6>
+                    <h6>Creación de Webs Apps para dispositivos móviles (iOS o Android), u ordenador. <br> <br>
+                        Mis Funciones: Desarrollar, optimizar y solucionar problemas en aplicaciones.</h6>
                     <div class="footcard">
                         <h5>Ver Precios<i class="fa-solid fa-arrow-right"></i></h5>
                     <div class="dots">
@@ -372,6 +379,66 @@
         <section class="contact-me" id="contact">
             <h3>Contactame</h3>
             <h4><span>Hablemos sobre</span> Tus Ideas</h4>
+
+            <div class="contactdivs">
+                <div class="contleft">
+                    <div class="container">
+                        <i class="fa-regular fa-map"></i>
+                        <div class="barra"></div>                  
+                        <div class="datos">
+                            <h4>Dirección</h4><h3>Junin 1453, S.M. de Tucumán</h3>
+                        </div>
+                    </div>
+
+                    <div class="container">
+                        <i class="fa-regular fa-user"></i><div class="barra"></div>                    
+                        <div class="datos">
+                            <h4>Freelance</h4><h3>Disponible</h3>
+                        </div>
+                    </div>
+                    
+                    <div class="container">
+                        <i class="fa-regular fa-envelope"></i><div class="barra"></div>                   
+                        <div class="datos">
+                            <h4>Email</h4><h3>leandrorojano@gmail.com</h3>
+                        </div>
+                    </div>
+
+                    <div class="container">
+                        <i class="fa-solid fa-mobile-screen"></i><div class="barra"></div>                    
+                        <div class="datos">
+                            <h4>Teléfono</h4><h3>+5493813150489</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="contright">
+                    <form action="">
+                        <div class="top-campo">
+                            <div class="campo">
+                                <input type="text" id="name" name="name" class="name" placeholder="Tu Nombre" required>
+                            
+                                <div class="form-icon"><i class="fa-regular fa-user"></i></div>
+                            </div>
+                            
+                            <div class="campo">
+                                <input type="email" id="email" class="mail" placeholder="Ingresa tu correo electrónico" required>
+                                <div class="form-icon"><i class="fa-regular fa-envelope"></i></div><br>
+                            </div>
+                        </div>
+                        
+                        <div class="campo">
+                            <input type="text" id="subject" class="subject" placeholder="Asunto" required>
+                            <div class="form-icon"><i class="fa-solid fa-book-bookmark"></i></div><br>
+                        </div>
+                        
+                        <div class="campo">
+                            <textarea id="message" class="msg" name="comentarios" rows="4" cols="50" placeholder="Tu Mensaje"></textarea><div class="form-icon"><i class="fa-regular fa-comment-dots"></i></div><br>
+                        </div>
+                        
+                        <input type="submit" class="gradient-button" value="Enviar Mensaje">
+                    </form>
+                </div>
+            </div>
         </section>
         <section class="foot">
             <div class="foot1">
