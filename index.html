@@ -18,9 +18,9 @@
     <header>
         <div class="container">
             <div class="logo">
-                <h2>LR<span>.</span>Dev</h2>
+                <a href="#hero"><h2>LR<span>.</span>Dev</h2></a>
             </div>
-            <div class="links">
+            <div class="link">
                 <a href="#services">Servicios</a>
                 <a href="#skills">Habilidades</a>
                 <a href="#portfolio">Portfolio</a>
@@ -32,7 +32,7 @@
     </header>
 
     <main>
-        <section class="hero">
+        <section class="hero" id="hero">
             <div class="hero-1">
                 <h3>Hola! <span>Mi nombre es</span></h3>
                 <h2><span data-text="Leandro">Leandro</span> Rojano</h2>
@@ -188,7 +188,7 @@
                     <div class="title">
                         <h3>HTML</h3><h2>100<span>%</span></h2>
                     </div>
-                    <h5>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati assumenda vero recusandae velit officia? Animi.</h5>
+                    <h5>Tengo experiencia en crear la estructura básica de páginas web utilizando HTML. Esto incluye la creación de etiquetas, elementos y la organización del contenido.</h5>
                 <div class="skill-bar" style="--porcentaje:100%"></div>
                 </div>
 
@@ -196,7 +196,7 @@
                     <div class="title">
                         <h3>CSS</h3><h2>100<span>%</span></h2>
                     </div>
-                    <h5>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati assumenda vero recusandae velit officia? Animi.</h5>
+                    <h5>Puedo diseñar y estilizar páginas web utilizando CSS. Esto abarca desde la disposición de elementos hasta la selección de colores y fuentes.</h5>
                 <div class="skill-bar" style="--porcentaje:100%"></div>
                 </div>
 
@@ -204,7 +204,7 @@
                     <div class="title">
                         <h3>Java Script</h3><h2>80<span>%</span></h2>
                     </div>
-                    <h5>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati assumenda vero recusandae velit officia? Animi.</h5>
+                    <h5>Soy competente en el uso de JavaScript para crear interacciones dinámicas en las páginas web. Puedo manipular el DOM, realizar llamadas a APIs y crear efectos visuales.</h5>
                 <div class="skill-bar" style="--porcentaje:80%"></div>
                 </div>
 
@@ -212,7 +212,7 @@
                     <div class="title">
                         <h3>React</h3><h2>70<span>%</span></h2>
                     </div>
-                    <h5>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati assumenda vero recusandae velit officia? Animi.</h5>
+                    <h5>He trabajado con React para construir aplicaciones de una sola página (SPA). Puedo crear componentes reutilizables, gestionar el estado y optimizar el rendimiento.</h5>
                 <div class="skill-bar" style="--porcentaje:70%"></div>
                 </div>
 
@@ -220,7 +220,7 @@
                     <div class="title">
                         <h3>Angular</h3><h2>40<span>%</span></h2>
                     </div>
-                    <h5>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati assumenda vero recusandae velit officia? Animi.</h5>
+                    <h5>Tengo conocimientos en Angular, otro popular framework frontend. Puedo desarrollar aplicaciones escalables y mantener la coherencia en el código.</h5>
                 <div class="skill-bar" style="--porcentaje:40%"></div>
                 </div>
 
@@ -228,7 +228,7 @@
                     <div class="title">
                         <h3>Figma</h3><h2>90<span>%</span></h2>
                     </div>
-                    <h5>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati assumenda vero recusandae velit officia? Animi.</h5>
+                    <h5>Utilizo Figma para diseñar y prototipar interfaces de usuario. Puedo colaborar con diseñadores y traducir sus diseños a código.</h5>
                 <div class="skill-bar" style="--porcentaje:90%"></div>
                 </div>
             </div>
@@ -238,6 +238,280 @@
             <h3>Portfolio</h3>
             <h4><span>Mis</span> Proyectos</h4>
 
+            <input type="radio" id="all" name="button" checked>
+            <input type="radio" id="angular" name="button">
+            <input type="radio" id="react" name="button">
+            <input type="radio" id="figma" name="button">
+            <input type="radio" id="js" name="button">
+            <input type="radio" id="css" name="button">
+
+            <label class="tag all" for="all">Todo</label>
+            <label class="tag tag1" for="angular">Angular</label>
+            <label class="tag tag2" for="react">React</label>
+            <label class="tag tag3" for="figma">Figma</label>
+            <label class="tag tag4" for="js">Java Script</label>
+            <label class="tag tag5" for="css">CSS</label>
+            <br>
+
+            <div class="projects">
+            
+                <div class="angular">
+                    <div class="card">
+                        <img src="img/tripmanager.png" alt="">
+                        <h2>Angular</h2>
+                        <h4>Administrador de Viajes</h4>
+                        <h6>App realizada en Angular en el cual se puede crear, modificar o borrar datos de pasajeros, colectivos y destinos, de una base de datos, para una empresa de viajes.</h6>
+                        <div class="footcard">
+                            <div class="links">
+                                <a href="https://demo-viajes.delphos.ar/"><h5>Ver Proyecto <i class="fa-solid fa-arrow-right"></i></h5></a>
+                                <a href="https://github.com/leoito88/trip-manager-angular"><h5>Ver Código <i class="fa-solid fa-arrow-right"></i></h5></a>
+                            </div>
+                        <div class="dots">
+                            <div class="nodott"></div>
+                            <div class="nodott"></div>
+                            <div class="dott"></div>
+                            <div class="dott"></div>
+                            <div class="dott"></div>
+                            <div class="nodott"></div>
+                            <div class="dott"></div>
+                            <div class="dott"></div>
+                            <div class="dott"></div>
+                            <div class="dott"></div>
+                            <div class="dott"></div>
+                            <div class="dott"></div>
+                            <div class="dott"></div>
+                            <div class="dott"></div>
+                            <div class="dott"></div>
+                            <div class="dott"></div>
+                            <div class="dott"></div>
+                            <div class="dott"></div>
+                            <div class="dott"></div>
+                            <div class="dott"></div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="react">
+                    <div class="card">
+                        <img src="img/Ecommerce.png" alt="">
+                        <h2>React</h2>
+                        <h4>E-commerce</h4>
+                        <h6>E-commerce desarrollado en React usando Fake API en el cual se puede ver en detalle cada producto, cambiar por páginas y visualizar los carritos cargados.</h6>
+                        <div class="footcard">
+                            <div class="links">
+                                <a href="https://githubbox.com/leoito88/ecommerce-react"><h5>Ver Proyecto <i class="fa-solid fa-arrow-right"></i></h5></a>
+                                <a href="https://github.com/leoito88/ecommerce-react"><h5>Ver Código <i class="fa-solid fa-arrow-right"></i></h5></a>
+                            </div>
+                        <div class="dots">
+                            <div class="nodott"></div>
+                            <div class="nodott"></div>
+                            <div class="dott"></div>
+                            <div class="dott"></div>
+                            <div class="dott"></div>
+                            <div class="nodott"></div>
+                            <div class="dott"></div>
+                            <div class="dott"></div>
+                            <div class="dott"></div>
+                            <div class="dott"></div>
+                            <div class="dott"></div>
+                            <div class="dott"></div>
+                            <div class="dott"></div>
+                            <div class="dott"></div>
+                            <div class="dott"></div>
+                            <div class="dott"></div>
+                            <div class="dott"></div>
+                            <div class="dott"></div>
+                            <div class="dott"></div>
+                            <div class="dott"></div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="figma">
+                    <div class="card">
+                        <img src="img/fig.png" alt="">
+                        <h2>Figma</h2>
+                        <h4>Prototipado en Figma</h4>
+                        <h6>Página web Hero de la marca de motocicletas KTM prototipada para Escritorio y en Celular para llevarla luego al desarrollo en código.</h6>
+                        <div class="footcard">
+                            <div class="links">
+                                <a href="https://www.figma.com/proto/is5O7VuLlPOnPWOY4sw068/KTM-WEB-PAGE?node-id=1-2&t=74wd3Vku8TXqBU8d-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A2&show-proto-sidebar=1"><h5>Ver Proyecto <i class="fa-solid fa-arrow-right"></i></h5></a>
+                            </div>
+                        <div class="dots">
+                            <div class="nodott"></div>
+                            <div class="nodott"></div>
+                            <div class="dott"></div>
+                            <div class="dott"></div>
+                            <div class="dott"></div>
+                            <div class="nodott"></div>
+                            <div class="dott"></div>
+                            <div class="dott"></div>
+                            <div class="dott"></div>
+                            <div class="dott"></div>
+                            <div class="dott"></div>
+                            <div class="dott"></div>
+                            <div class="dott"></div>
+                            <div class="dott"></div>
+                            <div class="dott"></div>
+                            <div class="dott"></div>
+                            <div class="dott"></div>
+                            <div class="dott"></div>
+                            <div class="dott"></div>
+                            <div class="dott"></div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="js">
+                    <div class="card">
+                        <img src="img/musicplayer.png" alt="">
+                        <h2>Java Script</h2>
+                        <h4>Reproductor de Música</h4>
+                        <h6>Reproductor realizado en JavaScript, al cual se le agregó portada, tiempo total de la canción y barra de progreso clickeable.</h6>
+                        <div class="footcard">
+                            <div class="links">
+                                <a href="https://leoito88.github.io/musicPlayer/"><h5>Ver Proyecto <i class="fa-solid fa-arrow-right"></i></h5></a>
+                                <a href="https://github.com/leoito88/musicPlayer"><h5>Ver Código <i class="fa-solid fa-arrow-right"></i></h5></a>
+                            </div>
+                        <div class="dots">
+                            <div class="nodott"></div>
+                            <div class="nodott"></div>
+                            <div class="dott"></div>
+                            <div class="dott"></div>
+                            <div class="dott"></div>
+                            <div class="nodott"></div>
+                            <div class="dott"></div>
+                            <div class="dott"></div>
+                            <div class="dott"></div>
+                            <div class="dott"></div>
+                            <div class="dott"></div>
+                            <div class="dott"></div>
+                            <div class="dott"></div>
+                            <div class="dott"></div>
+                            <div class="dott"></div>
+                            <div class="dott"></div>
+                            <div class="dott"></div>
+                            <div class="dott"></div>
+                            <div class="dott"></div>
+                            <div class="dott"></div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="css">
+                    <div class="card">
+                        <img src="img/uicomp.png" alt="">
+                        <h2>CSS</h2>
+                        <h4>Desarrollo diseño en CSS</h4>
+                        <h6>Componentes de UI replicados y desarrollados íntegramente en CSS. Se requería que los componentes queden idénticos a un diseño presentado.</h6>
+                        <div class="footcard">
+                            <div class="links">
+                                <a href="https://leoito88.github.io/masonry-grid-boxes/"><h5>Ver Proyecto <i class="fa-solid fa-arrow-right"></i></h5></a>
+                                <a href="https://github.com/leoito88/masonry-grid-boxes"><h5>Ver Código <i class="fa-solid fa-arrow-right"></i></h5></a>
+                            </div>
+                        <div class="dots">
+                            <div class="nodott"></div>
+                            <div class="nodott"></div>
+                            <div class="dott"></div>
+                            <div class="dott"></div>
+                            <div class="dott"></div>
+                            <div class="nodott"></div>
+                            <div class="dott"></div>
+                            <div class="dott"></div>
+                            <div class="dott"></div>
+                            <div class="dott"></div>
+                            <div class="dott"></div>
+                            <div class="dott"></div>
+                            <div class="dott"></div>
+                            <div class="dott"></div>
+                            <div class="dott"></div>
+                            <div class="dott"></div>
+                            <div class="dott"></div>
+                            <div class="dott"></div>
+                            <div class="dott"></div>
+                            <div class="dott"></div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="css">
+                    <div class="card">
+                        <img src="img/login.png" alt="">
+                        <h2>CSS</h2>
+                        <h4>Desarrollo diseño en CSS</h4>
+                        <h6>Login replicado y desarrollado íntegramente en CSS. Se requería que el Login quede idéntico a un diseño presentado.</h6>
+                        <div class="footcard">
+                            <div class="links">
+                                <a href="https://leoito88.github.io/image-based-web-project-login/"><h5>Ver Proyecto <i class="fa-solid fa-arrow-right"></i></h5></a>
+                                <a href="https://github.com/leoito88/image-based-web-project-login"><h5>Ver Código <i class="fa-solid fa-arrow-right"></i></h5></a>
+                            </div>
+                        <div class="dots">
+                            <div class="nodott"></div>
+                            <div class="nodott"></div>
+                            <div class="dott"></div>
+                            <div class="dott"></div>
+                            <div class="dott"></div>
+                            <div class="nodott"></div>
+                            <div class="dott"></div>
+                            <div class="dott"></div>
+                            <div class="dott"></div>
+                            <div class="dott"></div>
+                            <div class="dott"></div>
+                            <div class="dott"></div>
+                            <div class="dott"></div>
+                            <div class="dott"></div>
+                            <div class="dott"></div>
+                            <div class="dott"></div>
+                            <div class="dott"></div>
+                            <div class="dott"></div>
+                            <div class="dott"></div>
+                            <div class="dott"></div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="js">
+                    <div class="card">
+                        <img src="img/leandru.png" alt="">
+                        <h2>Java Script - Macromedia Flash</h2>
+                        <h4>Desarrollo página Web en Flash</h4>
+                        <h6>Página propia hecha en 2004 con Macromedia Flash y JavaScript. Para correcto funcionamiento ver en escritorio (sólo pagina principal)</h6>
+                        <div class="footcard">
+                            <div class="links">
+                                <a href="https://web.archive.org/web/20041126120636/http://www.leandru.com.ar/"><h5>Ver Proyecto <i class="fa-solid fa-arrow-right"></i></h5></a>
+                            </div>
+                        <div class="dots">
+                            <div class="nodott"></div>
+                            <div class="nodott"></div>
+                            <div class="dott"></div>
+                            <div class="dott"></div>
+                            <div class="dott"></div>
+                            <div class="nodott"></div>
+                            <div class="dott"></div>
+                            <div class="dott"></div>
+                            <div class="dott"></div>
+                            <div class="dott"></div>
+                            <div class="dott"></div>
+                            <div class="dott"></div>
+                            <div class="dott"></div>
+                            <div class="dott"></div>
+                            <div class="dott"></div>
+                            <div class="dott"></div>
+                            <div class="dott"></div>
+                            <div class="dott"></div>
+                            <div class="dott"></div>
+                            <div class="dott"></div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
         </section>
 
         <section class="testimonials" id="testimonials">
