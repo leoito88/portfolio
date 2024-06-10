@@ -21,12 +21,25 @@
                 <a href="#hero"><h2>LR<span>.</span>Dev</h2></a>
             </div>
             <div class="link">
-                <a href="#services">Servicios</a>
-                <a href="#skills">Habilidades</a>
-                <a href="#portfolio">Portfolio</a>
-                <a href="#testimonials">Testimonios</a>
-                <a href="#prices">Precios</a>    
-                <a href="#contact">Contactame</a>
+                <label class="hamburguer-menu">
+                    <input type="checkbox" id="hamburguer">
+                </label>
+                <div class="sidebar">
+                    <div><a href="#services" onclick="document.getElementById('hamburguer').checked = false;">Servicios</a></div>
+                    <div><a href="#skills" onclick="document.getElementById('hamburguer').checked = false;">Habilidades</a></div>
+                    <div><a href="#portfolio" onclick="document.getElementById('hamburguer').checked = false;">Portfolio</a></div>
+                    <div><a href="#testimonials" onclick="document.getElementById('hamburguer').checked = false;">Testimonios</a></div>
+                    <div><a href="#prices" onclick="document.getElementById('hamburguer').checked = false;">Precios</a>  </div>
+                    <div><a href="#contact" onclick="document.getElementById('hamburguer').checked = false;">Contactame</a></div>
+                </div>
+                <div class="a-links">
+                    <a href="#services">Servicios</a>
+                    <a href="#skills">Habilidades</a>
+                    <a href="#portfolio">Portfolio</a>
+                    <a href="#testimonials">Testimonios</a>
+                    <a href="#prices">Precios</a>    
+                    <a href="#contact">Contactame</a>
+                </div>
             </div>
         </div>
     </header>
@@ -186,7 +199,7 @@
             <div class="skill-cards">
                 <div class="skill-card">
                     <div class="title">
-                        <h3>HTML</h3><h2>100<span>%</span></h2>
+                        <h3>HTML <i class="fa-brands fa-html5"></i></h3><h2>100<span>%</span></h2>
                     </div>
                     <h5>Tengo experiencia en crear la estructura básica de páginas web utilizando HTML. Esto incluye la creación de etiquetas, elementos y la organización del contenido.</h5>
                 <div class="skill-bar" style="--porcentaje:100%"></div>
@@ -194,7 +207,7 @@
 
                 <div class="skill-card">
                     <div class="title">
-                        <h3>CSS</h3><h2>100<span>%</span></h2>
+                        <h3>CSS <i class="fa-brands fa-css3-alt"></i></h3><h2>100<span>%</span></h2>
                     </div>
                     <h5>Puedo diseñar y estilizar páginas web utilizando CSS. Esto abarca desde la disposición de elementos hasta la selección de colores y fuentes.</h5>
                 <div class="skill-bar" style="--porcentaje:100%"></div>
@@ -202,7 +215,7 @@
 
                 <div class="skill-card">
                     <div class="title">
-                        <h3>Java Script</h3><h2>80<span>%</span></h2>
+                        <h3>Java Script <i class="fa-brands fa-js"></i></h3><h2>80<span>%</span></h2>
                     </div>
                     <h5>Soy competente en el uso de JavaScript para crear interacciones dinámicas en las páginas web. Puedo manipular el DOM, realizar llamadas a APIs y crear efectos visuales.</h5>
                 <div class="skill-bar" style="--porcentaje:80%"></div>
@@ -210,7 +223,7 @@
 
                 <div class="skill-card">
                     <div class="title">
-                        <h3>React</h3><h2>70<span>%</span></h2>
+                        <h3>React <i class="fa-brands fa-react"></i></h3><h2>70<span>%</span></h2>
                     </div>
                     <h5>He trabajado con React para construir aplicaciones de una sola página (SPA). Puedo crear componentes reutilizables, gestionar el estado y optimizar el rendimiento.</h5>
                 <div class="skill-bar" style="--porcentaje:70%"></div>
@@ -218,7 +231,7 @@
 
                 <div class="skill-card">
                     <div class="title">
-                        <h3>Angular</h3><h2>40<span>%</span></h2>
+                        <h3>Angular <i class="fa-brands fa-angular"></i></h3><h2>40<span>%</span></h2>
                     </div>
                     <h5>Tengo conocimientos en Angular, otro popular framework frontend. Puedo desarrollar aplicaciones escalables y mantener la coherencia en el código.</h5>
                 <div class="skill-bar" style="--porcentaje:40%"></div>
@@ -226,7 +239,7 @@
 
                 <div class="skill-card">
                     <div class="title">
-                        <h3>Figma</h3><h2>90<span>%</span></h2>
+                        <h3>Figma <i class="fa-brands fa-figma"></i></h3><h2>90<span>%</span></h2>
                     </div>
                     <h5>Utilizo Figma para diseñar y prototipar interfaces de usuario. Puedo colaborar con diseñadores y traducir sus diseños a código.</h5>
                 <div class="skill-bar" style="--porcentaje:90%"></div>
@@ -517,6 +530,118 @@
         <section class="testimonials" id="testimonials">
             <h3>Testimonios</h3>
             <h4><span>Lo que</span> dicen mis Clientes</h4>
+
+            <div class="container">
+                <div class="card">
+                    <div class="quote">
+                        <i class="fa-solid fa-quote-right"></i>
+                    </div>
+                    <img src="img/client1-612x612.jpg" alt="">
+                    <h6>“Gracias a las habilidades de Leandro, nuestra tienda en línea ahora tiene un diseño moderno y atractivo. Los clientes adoran la interfaz intuitiva y la velocidad de carga. ¡Lo recomiendo sin dudarlo!”</h6>
+                    <div class="footcard">
+                        <div class="links">
+                            <div class="links">
+                                <h2>Natalia Ramos</h2>
+                                <h5>Dueña de tienda Online</h5>
+                             </div>
+                        </div>
+                    <div class="dots">
+                        <div class="nodott"></div>
+                        <div class="nodott"></div>
+                        <div class="dott"></div>
+                        <div class="dott"></div>
+                        <div class="dott"></div>
+                        <div class="nodott"></div>
+                        <div class="dott"></div>
+                        <div class="dott"></div>
+                        <div class="dott"></div>
+                        <div class="dott"></div>
+                        <div class="dott"></div>
+                        <div class="dott"></div>
+                        <div class="dott"></div>
+                        <div class="dott"></div>
+                        <div class="dott"></div>
+                        <div class="dott"></div>
+                        <div class="dott"></div>
+                        <div class="dott"></div>
+                        <div class="dott"></div>
+                        <div class="dott"></div>
+                    </div>
+                    </div>
+                </div>
+    
+                <div class="card">
+                    <div class="quote">
+                        <i class="fa-solid fa-quote-right"></i>
+                    </div>
+                    <img src="img/client2-612x612.jpg" alt="">
+                    <h6>“Leandro hizo un trabajo excepcional al rediseñar mi blog de viajes. Su conocimiento fue fundamental para crear una experiencia de usuario única. ¡Estoy encantado con los resultados!”</h6>
+                    <div class="footcard">
+                        <div class="links">
+                            <h2>Sergio Barbieri</h2>
+                            <h5>Blogger de viajes</h5>
+                         </div>
+                    <div class="dots">
+                        <div class="nodott"></div>
+                        <div class="nodott"></div>
+                        <div class="dott"></div>
+                        <div class="dott"></div>
+                        <div class="dott"></div>
+                        <div class="nodott"></div>
+                        <div class="dott"></div>
+                        <div class="dott"></div>
+                        <div class="dott"></div>
+                        <div class="dott"></div>
+                        <div class="dott"></div>
+                        <div class="dott"></div>
+                        <div class="dott"></div>
+                        <div class="dott"></div>
+                        <div class="dott"></div>
+                        <div class="dott"></div>
+                        <div class="dott"></div>
+                        <div class="dott"></div>
+                        <div class="dott"></div>
+                        <div class="dott"></div>
+                    </div>
+                    </div>
+                </div>
+    
+                <div class="card">
+                    <div class="quote">
+                        <i class="fa-solid fa-quote-right"></i>
+                    </div>
+                    <img src="img/client3-612x612.jpg" alt="">
+                    <h6>“Leandro demostró su experiencia en Angular al desarrollar nuestra aplicación web. Su atención al detalle y habilidades de resolución de problemas fueron impresionantes. ¡Gracias!”</h6>
+                    <div class="footcard">
+                        <div class="links">
+                           <h2>Laura De Nucci</h2>
+                           <h5>Dueña de empresa de viajes</h5>
+                        </div>
+                    <div class="dots">
+                        <div class="nodott"></div>
+                        <div class="nodott"></div>
+                        <div class="dott"></div>
+                        <div class="dott"></div>
+                        <div class="dott"></div>
+                        <div class="nodott"></div>
+                        <div class="dott"></div>
+                        <div class="dott"></div>
+                        <div class="dott"></div>
+                        <div class="dott"></div>
+                        <div class="dott"></div>
+                        <div class="dott"></div>
+                        <div class="dott"></div>
+                        <div class="dott"></div>
+                        <div class="dott"></div>
+                        <div class="dott"></div>
+                        <div class="dott"></div>
+                        <div class="dott"></div>
+                        <div class="dott"></div>
+                        <div class="dott"></div>
+                    </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section class="pricing" id="prices">

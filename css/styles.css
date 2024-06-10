@@ -6,6 +6,12 @@
     --bg-color: #f0ece5;
     --main-color: #155445;
     --hl-color: #28a587;
+    
+    --bar-width: 35px;
+    --bar-height: 5px;
+    --hamburger-gap:6px;
+    --hamburguer-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2);
+    --foreground: #155445;
 }
 
 /* Fuentes Locales */
@@ -34,7 +40,7 @@ body{
 /* Seccion Header */
 
 header{
-    width: 74.5%;
+    width: 81.3%;
     height: 70px;
     border-radius: 10px 10px 10px 10px;
     position: sticky;
@@ -47,6 +53,7 @@ header{
     backdrop-filter: blur(10px);
     opacity: 1; /* Opacidad */
     border: solid 1px rgba(254, 254, 254, 0.2);
+    box-sizing: border-box;
 }
 
 header .container{
@@ -58,7 +65,7 @@ header .container{
 
 header a{
     text-decoration: none;
-    padding: 0px 10px 0 0;
+    margin: 0px 10px 0 0;
     color: var(--main-color);
     font-weight: 800;
     transition: color 0.3s ease;
@@ -71,6 +78,89 @@ header .link a:hover{
     color: transparent;
     color: var(--hl-color);
 }
+
+header .hamburguer-menu{
+    display: flex;
+    flex-direction: column;
+    gap: var(--hamburger-gap);
+    box-sizing: border-box;
+    width: max-content;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    z-index: 10;
+    cursor: pointer;
+    --x-width: calc(var(--hamburguer-height) * 1.41421356237);
+    /* display: none; */
+}
+
+header .hamburguer-menu::before,
+header .hamburguer-menu::after,
+header .hamburguer-menu input{
+    content: "";
+    width: var(--bar-width);
+    height: var(--bar-height);
+    background-color: var(--foreground);
+    border-radius: 100px;
+    box-sizing: border-box;
+    transition: all .2s ease-in-out;
+    transform-origin: left center;
+}
+
+header .hamburguer-menu input{
+    appearance: none;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    pointer-events: none;
+    box-sizing: border-box;
+    border: none;
+}
+
+header .hamburguer-menu:has(input:checked)::before{
+    rotate: 45deg;
+    width: var(--x-width);
+    translate: 0 calc(var(--bar-height) / -2);
+}
+
+header .hamburguer-menu:has(input:checked)::after{
+    rotate: -45deg;
+    width: var(--x-width);
+    translate: 0 calc(var(--bar-height) / 2);
+}
+
+header .hamburguer-menu input:checked{
+    opacity: 0;
+    width: 0;
+}
+
+header .sidebar{
+    position: absolute;
+    translate: 0 -400%;
+    padding: 0.5rem 1rem;
+    padding-top: calc(var(--hamburguer-height) + 2rem);
+    background-color: #196150;
+    color: #28a587;
+    height: 100vh;
+    width: 40vw;
+    transition: all .5s;
+    z-index: 3;
+    top: 0;
+    /* display: none; */
+}
+
+header .hamburguer-menu:has(input:checked) + .sidebar{
+    translate: 0;
+    /* display: block; */
+}
+
+header .hamburguer-menu:has(input:checked){
+    --foreground: #fff;
+}
+
+/* header .a-links{
+    display: none;
+} */
 
 header h2{
     font-family: "montserrat", sans-serif;
@@ -136,11 +226,10 @@ main{
 
 .hero i{
     font-size: 2.2em;
-    letter-spacing: 0.5em;
+    /* letter-spacing: 0.5em; */
     color: #000;
     transition: color 1s ease;
-    margin-top: 10px;
-    margin-bottom: 15px;
+    margin: 10px 20px 15px 0;
 }
 
 .hero i:hover{
@@ -536,7 +625,13 @@ main{
     /* background-color: #fff; */
     border-radius: 10px;
     padding: 15px;
-    /* width: 25%; */
+    transition: all .6s;
+}
+
+.skill-card:hover{
+    scale: 1.1;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    background-color: #f8f5f2;
 }
 
 .skill-bar {
@@ -572,7 +667,7 @@ main{
 }
 
 .tag{
-    font-size: 20px;
+    font-size: 15px;
     margin: 1em 5px;
     padding: 5px 25px;
     border-radius: 50px;
@@ -731,6 +826,62 @@ main{
 .testimonials{
     padding-top: 20px;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.testimonials .container{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.testimonials .container .card{
+    padding-top: 20px;
+    width: 250px;
+    position: relative;
+}
+
+.testimonials img{
+    border-radius: 5px;
+    width: 250px;
+    margin: auto auto;
+}
+
+.testimonials h2{
+    font-size: 1em;
+    margin: 0;
+}
+
+.testimonials h5{
+    font-size: 0.75em;
+    font-weight: 500;
+    margin: 5px 0 20px 0;
+}
+
+.testimonials h6{
+    font-size: 0.7em;
+    font-weight: 500;
+    line-height: 1.5em;
+}
+
+.testimonials .quote{
+    background-color: #f8f5f2;
+    color: #28a587;
+    position: absolute;
+    top: 20px;
+    border-radius: 0 0 10px 0;
+    font-size: 2em;
+    padding: 5px;
+    -webkit-text-stroke: 1px #000;
+}
+
+.testimonials .dots{
+    bottom: 3px;
 }
 
 /* Sección Pricing */
@@ -1040,7 +1191,6 @@ form{
 }
 
 .foot i:hover{
-    font-size: 2.2em;
     color: #28a587;
 }
 
