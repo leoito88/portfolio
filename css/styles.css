@@ -95,7 +95,7 @@ header .hamburguer-menu{
     z-index: 10;
     cursor: pointer;
     --x-width: calc(var(--hamburguer-height) * 1.41421356237);
-    /* display: none; */
+    display: none;
 }
 
 header .hamburguer-menu::before,
@@ -262,7 +262,7 @@ main{
 .hero-1{
     width: 50%;
     /* background-color: #fff; */
-    padding: 0 50px;
+    padding: 0 0px 0 50px;
     text-align: left;
 }
 
@@ -583,6 +583,7 @@ main{
     align-items: center;
     justify-content: center;
     margin: 20px;
+    display: none;
 }
 
 .dot{
@@ -866,11 +867,14 @@ main{
     justify-content: center;
     gap: 20px;
     height: 450px;
+    /* overflow-x: scroll; */
+    padding: 20px;
 }
 
 .testimonials .container .card{
     padding-top: 20px;
     width: 300px;
+    min-width: 270px;
     position: relative;
     height: 100%;
 }
@@ -919,7 +923,7 @@ main{
 .testimonials .dots{
     position: absolute;
     bottom: 15px;
-    z-index: 0;
+    z-index: 5;
 }
 
 /* Sección Pricing */
@@ -931,14 +935,24 @@ main{
 
 .pricing .cards{
     /* background-color: #196150; */
-    height: 600px;
+    height: 670px;
     gap: 20px;
+    display: flex;
+    justify-content: center;
+    /* overflow-x: scroll; */
+    width: 100%;
+    padding: 40px;
 }
+
+::-webkit-scrollbar {
+    display: none;
+  }
 
 .pricing .card{
     position: relative;
     padding: 20px;
-    width: 300px;
+    width: 600px;
+    min-width: 300px;
     /* display: flex; */
 }
 
@@ -1061,7 +1075,7 @@ main{
 
 footer{
     position: relative;
-    top:-120px;
+    top:-121px;
     background-color: var(--bg-color);
     width: 75%;
     border-radius: 0 0 10px 10px;
@@ -1164,7 +1178,7 @@ input:focus {
     align-items: center;
     justify-content: space-between;
     gap: 10px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .campo{
@@ -1172,7 +1186,6 @@ input:focus {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 10px;
 }
 
 form{
@@ -1193,7 +1206,7 @@ form{
 .subject{
     width: 100%;
     padding-left: 40px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .msg{
