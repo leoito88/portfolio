@@ -629,6 +629,8 @@ main{
     justify-content: center;
     gap: 30px;
     flex-wrap: wrap;
+    height: 180px;
+    margin-bottom: 150px;
 }
 
 .skill-card h3{
@@ -655,7 +657,7 @@ main{
 
 .skill-card{
     position: relative;
-    height: 180px;
+    height: 100%;
     flex-basis: 25%;
     padding: 5px;
     text-align: left;

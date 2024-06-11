@@ -74,6 +74,10 @@
         scale: 0.9;
     }
 
+    .skill-cards{
+        height: 200px;
+    }
+
     .pricing .cards{
         height: 650px;
         justify-content: start;
@@ -261,6 +265,10 @@
         right: 20px;
     }
 
+    .skill-cards{
+        height: 230px;
+    }
+
 
     .contactdivs{
         width: 100%;
@@ -324,9 +332,39 @@
         padding: 10px;
     }
 
+    .services .cards{
+        margin: auto;
+        height: 500px;
+        gap: 5px;
+        width: 95%;
+    }
+
+    .services .card{
+        padding: 5px;
+    }
+
+    .services .cards .card .dots{
+        scale: 0.5;
+        right: -5px;
+        top: 5px;
+    }
+
+    .services .cards .card i{
+        padding-left: 3px;
+    }
+
+    .skill-cards{
+        margin-bottom: 450px;
+    }
+
+    .skill-card{
+        flex-basis: 40%;
+    }
+
     footer{
         width: 100%;
         margin: auto;
+        margin-bottom: -70px;
     }
 
 }
@@ -373,14 +411,16 @@
     }
     
     .bg{
-        width: 300px;
-        height: 300px;
+        width: 400px;
+        height: 400px;
+        scale: 0.6;
     }
 
     .services .cards{
         flex-direction: column;
         margin: auto auto;
         height: 800px;
+        gap: 20px;
     }
 
     .services .cards .card .dots{
@@ -389,6 +429,24 @@
         right: 30px;
     }
 
+    .skill-cards{
+        margin: 0px auto;
+        display: flex;
+        justify-content: start;
+        scroll-snap-type: x mandatory;
+        scroll-padding: 0 20px;
+        max-width: 300px;
+        width: 100vw;
+        overflow-x: scroll;
+        flex-wrap: nowrap;
+        padding: 0px 70px;
+    }
+
+    .skill-card{
+        scroll-snap-align: center;
+        min-width: 200px;
+        height: 220px;
+    }
 
     footer{
         position: relative;
@@ -408,8 +466,8 @@
     }
 
     .contleft{
-        width: 80%;
-        padding: 0 40px 40px;
+        width: 100%;
+        padding: 0 40px 40px 0px;
     }
 
     .contright{
@@ -446,6 +504,12 @@
         padding: 0;
     }
 
+    header .sidebar a{
+        padding-left: 0;
+        font-size: 0.5em;
+        line-height: 3em;
+    }
+
     .hero{
         display: flex;
         flex-direction: column;
@@ -459,8 +523,16 @@
     .hero-1{
         width: 100%;
         /* background-color: #fff; */
-        padding: 0 50px;
+        padding: 0 10px;
         text-align: left;
+    }
+
+    .skil, .barra{
+        display: none;
+    }
+
+    .hero-2{
+        display: none;
     }
 
     header .link a{
@@ -491,7 +563,14 @@
         height: 300px;
     }
 
+    .services .card{
+        max-width: 80vw;
+        min-height: 300px;
+    }
 
+    .skill-card{
+        max-width: 100px;
+    }
     
     .pricing .cards{
         scroll-snap-type: x mandatory;
@@ -515,13 +594,18 @@
         width: 100%;
         border-radius: 0 0 10px 10px;
         margin: 0 auto;
-        padding: 30px 60px;
+        padding: 20px 10px;
         margin-bottom: -70px;
         z-index: 0;
     }
 
     footer .barra{
         display: none;
+    }
+
+    .contactdivs{
+        margin: 0;
+        width: 100%;
     }
 
     .contleft{
