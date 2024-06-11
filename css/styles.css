@@ -37,12 +37,7 @@ img{
 body{
     background-color: var(--main-color);
     margin: 0;
-    /* padding: 0; */
     text-align: center;
-    /* display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; */
     font-family: "montserrat", sans-serif;
 }
 
@@ -1190,12 +1185,7 @@ form{
     background-color: #f0f0f0;
 }
 
-.name{
-    width: 100%;
-    padding-left: 40px;
-}
-
-.mail{
+.name, .mail{
     width: 100%;
     padding-left: 40px;
 }
