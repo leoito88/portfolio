@@ -1,6 +1,6 @@
 ## Portfolio Personal
 
-Proyecto realizado en HTML y CSS. El formulario funciona como debe (me envía un mensaje a mi mail). Se lo hizo responsive en las siguientes resoluciones 1920, 1440, 1280, 1024, 768, 480 y 320px. Se puso sliders de Cards en horizontal en pantallas táctiles.
+Proyecto realizado en HTML y CSS. El formulario es totalmente funcional (me envía un mensaje a mi mail). Se lo hizo responsive en las siguientes resoluciones 1920, 1440, 1280, 1024, 768, 480 y 320px. Se puso sliders de Cards en horizontal en pantallas táctiles.
 
 Puede ingresar al mismo desde el siguiente link:
 https://leoito88.github.io/portfolio/
