@@ -1,15 +1,23 @@
 ## Portfolio Personal
 
-Realizado en HTML y CSS
+Proyecto realizado en HTML y CSS. El formulario funciona como debe (me envía un mensaje a mi mail). Se lo hizo responsive en las siguientes resoluciones 1920, 1440, 1280, 1024, 768, 480 y 320px. Se puso sliders de Cards en horizontal en pantallas táctiles.
 
 Puede ingresar al mismo desde el siguiente link:
 https://leoito88.github.io/portfolio/
+
+![image](https://github.com/leoito88/portfolio/assets/59623841/5fa50fda-297a-4d93-9735-2ab06b719357)
+
 
 Diseño replicado:
 https://dribbble.com/shots/21491201-Portfolio-Website
 
 ![Portfolio](https://github.com/leoito88/portfolio/assets/59623841/83ebf288-dccb-4dcc-ac10-2c6bb116c488)
 
+## Estructura
+- index.html - Estructura principal de la pagina web.
+- normalize.css - Contiene variedad de estilos para la correcta visualización de la página en distintos navegadores.
+- styles.css - Conjunto de estilos que son aplicados a la pagina web para la correcta visualización de los elementos del DOM.
+- responsive.css - Conjunto de estilos que se aplican a distintas resoluciones para hacer la pagina web adaptable para celulares, tablets, computadoras y notebooks.
 
 ## Consigna
 Trabajo Práctico Final: Página Tipo Portfolio
@@ -22,7 +30,7 @@ El desarrollo del portfolio debe realizarse utilizando HTML y CSS, asegurando qu
 
 El código debe subirse a GitHub, acompañado de un archivo README que describa el proyecto. También se evaluará el perfil personal de GitHub de cada alumno, por lo que es importante mantenerlo actualizado y bien organizado.
 
-Fecha de Entrega: El trabajo debe ser entregado antes del 7 DE JUNIO  A LAS 9AM.
+Fecha de Entrega: El trabajo debe ser entregado antes del 12 DE JUNIO  A LAS 9AM.
 
 ## Notas Importantes:
 
