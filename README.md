@@ -1,13 +1,16 @@
-## Portfolio Personal
+ ## Portfolio Personal
+## Descripción
+Mi Portafolio en línea. Donde muestro mis habilidades en programación, mis trabajos, datos personales y contacto.
 
-Proyecto realizado en HTML y CSS. El formulario es totalmente funcional (me envía un mensaje a mi mail). Se lo hizo responsive en las siguientes resoluciones 1920, 1440, 1280, 1024, 768, 480 y 320px. Se puso sliders de Cards en horizontal en pantallas táctiles.
+Proyecto realizado en HTML y CSS. El formulario es totalmente funcional (me envía un mensaje a mi mail). Se lo hizo responsive en las siguientes resoluciones 1920, 1440, 1280, 1024, 768, 480 y 320px. Se puso sliders de Cards en horizontal en pantallas táctiles. El menú hamburguesa tiene una animación personalizada y es funcional en pantallas pequeñas.
 
+## Enlace al Portfolio 
 Puede ingresar al mismo desde el siguiente link:
 https://leoito88.github.io/portfolio/
 
 ![image](https://github.com/leoito88/portfolio/assets/59623841/5fa50fda-297a-4d93-9735-2ab06b719357)
 
-
+## Inspiración
 Diseño replicado:
 https://dribbble.com/shots/21491201-Portfolio-Website
 
