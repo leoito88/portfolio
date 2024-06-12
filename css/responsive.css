@@ -140,19 +140,6 @@
         top: -26px;
     }
 
-    .testimonials .container{
-        justify-content: start;
-        scroll-snap-type: x mandatory;
-        scroll-padding: 0 20px;
-        max-width: 700px;
-        width: 100vw;
-        overflow-x: scroll;
-    }
-
-    .testimonials .container .card{
-        scroll-snap-align: center;
-        width: 100%;
-    }
 
     .pricing .card{
         min-width: 290px;
@@ -162,6 +149,11 @@
         width: 90%;
         align-items: center;
         text-align: center;
+        position: relative;
+        top:-87px;
+        background-color: var(--bg-color);
+        border-radius: 0 0 10px 10px;
+        z-index: 0;
     }
 
     form{
@@ -255,6 +247,7 @@
     }
 
     footer{
+        top: -120px;
         width: 95%;
     }
 
@@ -275,6 +268,20 @@
 
     .skill-cards{
         height: 230px;
+    }
+
+    .testimonials .container{
+        justify-content: start;
+        scroll-snap-type: x mandatory;
+        scroll-padding: 0 20px;
+        max-width: 700px;
+        width: 100vw;
+        overflow-x: scroll;
+    }
+
+    .testimonials .container .card{
+        scroll-snap-align: center;
+        width: 100%;
     }
 
     .pricing .cards{
@@ -400,7 +407,8 @@
     footer{
         width: 100%;
         margin: auto;
-        margin-bottom: -70px;
+        margin-bottom: -79px;
+        top: -20px;
     }
 
 }
@@ -487,7 +495,7 @@
 
     footer{
         position: relative;
-        top:0px;
+        top:-25px;
         background-color: var(--bg-color);
         width: 100%;
         border-radius: 0 0 10px 10px;
