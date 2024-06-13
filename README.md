@@ -2,7 +2,7 @@
 ## Descripción
 Mi Portafolio en línea. Donde muestro mis habilidades en programación, mis trabajos, datos personales y contacto.
 
-Proyecto realizado en HTML y CSS. El formulario es totalmente funcional (me envía un mensaje a mi mail). Se lo hizo responsive en las siguientes resoluciones 1920, 1440, 1280, 1024, 768, 480 y 320px. Se puso sliders de Cards en horizontal en pantallas táctiles. El menú hamburguesa tiene una animación personalizada y es funcional en pantallas pequeñas.
+Proyecto realizado en HTML y CSS. El formulario es totalmente funcional (me envía un mensaje a mi mail). Se lo hizo responsive en las siguientes resoluciones 1920, 1440, 1280, 1024, 768, 480 y 320px. Se puso sliders de Cards en horizontal en pantallas táctiles. El menú hamburguesa tiene una animación personalizada y es funcional en pantallas pequeñas. El filtro de proyectos por categorías funciona y está desarrollado íntegramente en CSS.
 
 ## Enlace al Portfolio 
 Puede ingresar al mismo desde el siguiente link:
